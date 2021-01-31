@@ -1,0 +1,40 @@
+.btn {
+  display: inline-block;
+
+  padding: 0 36px;
+
+  font-size: 16px;
+  text-align: center;
+  color: #FFFFFF;
+
+  background-color: $accent;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(44, 39, 56, 0.08), 0 4px 8px rgba(44, 39, 56, 0.08);
+  box-sizing: border-box;
+  outline-color: transparent;
+
+  transition: .1s;
+
+  &:hover {
+    cursor: pointer;
+    transition: .1s;
+  }
+
+  &:not(:hover) {
+    transition: .1s;
+  }
+}
+
+.btn[disabled] {
+  color: #878787;
+  background-color: #DBE2EA;
+  box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+  &:hover {
+    cursor: inherit;
+    background-color: #DBE2EA;
+    color: #878787;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+  }
+}

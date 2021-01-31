@@ -1,0 +1,67 @@
+@import "vars";
+@import "fonts";
+
+html {
+  scroll-behavior: smooth;
+}
+
+::placeholder {
+  font-size: 16px;
+  color: #7C9CBF;
+}
+
+:focus::placeholder {
+  color: transparent;
+}
+
+
+body {
+  position: relative;
+  width: 1920px;
+  height: auto;
+
+  margin: 0 auto;
+
+  font-size: 16px;
+  color: $text;
+  line-height: 21px;
+  font-family: $default-font;
+
+  background-color: #e8e8e8;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+  input, textarea {
+    font-family: $default-font;
+    border: #666 1px solid;
+    outline: none;
+
+    &:focus:required:invalid {
+      border-color: red;
+    }
+
+    &:required:valid {
+      border-color: green;
+    }
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+@import "components/Form/form";
+@import "components/Main/main";
+@import "components/Select/select";
+@import "components/Btn/btn";
+
